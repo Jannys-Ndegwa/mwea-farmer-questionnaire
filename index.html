@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mwea Rice Farmer Questionnaire</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+
+<div class="container">
+
+  <h1>FARMER INTERVIEW QUESTIONNAIRE</h1>
+  <h2>Mwea Irrigation Scheme</h2>
+
+  <form id="farmerForm">
+
+    <div class="section">
+      <h3>Farmer Information</h3>
+
+      <label>Farmer Name</label>
+      <input type="text" name="farmerName" required>
+
+      <label>Farmer Area</label>
+      <input type="text" name="farmerArea">
+
+      <label>Contact</label>
+      <input type="text" name="contact">
+
+      <label>Date</label>
+      <input type="date" name="date">
+    </div>
+
+    <div class="section">
+      <h3>SECTION A: FARM DETAILS</h3>
+
+      <label>1. How many acres of rice do you currently farm?</label>
+      <input type="text" name="acres">
+
+      <label>2. Which rice variety are you growing?</label>
+      <input type="text" name="riceVariety">
+
+      <label>3. How many seasons do you harvest in a year?</label>
+      <input type="text" name="seasons">
+    </div>
+
+    <div class="section">
+      <h3>SECTION B: PRODUCTION, SEED SYSTEM & QUALITY</h3>
+
+      <label>4. What is your average yield per acre (in bags)?</label>
+      <input type="text" name="yield">
+
+      <label>5. Do you plant one variety or mix different seeds?</label>
+      <input type="text" name="seedMix">
+
+      <label>6. Where do you get your seeds and how much do they cost?</label>
+      <textarea name="seedSource"></textarea>
+
+      <label>7. Do you use recycled seeds?</label>
+      <select name="recycledSeeds">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+
+      <label>If yes, why?</label>
+      <textarea name="whyRecycled"></textarea>
+      <label>8. For those growing Pishori</label>
+      <label>a) How do you determine or ensure that the seeds you plant are pure Pishori?</label>
+      <textarea name="purePishori"></textarea>
+
+      <label>b) After planting pure Pishori seeds, what factors might affect its quality in between growing and milling, and how do you solve or manage them?</label>
+      <textarea name="pishoriQuality"></textarea>
+
+      <label>c) Is there a specific way for a customer or buyer to tell it is pure Pishori when purchasing?</label>
+      <textarea name="identifyPishori"></textarea>
+    </div>
+
+    <div class="section">
+      <h3>SECTION C: HARVEST & POST-HARVEST HANDLING</h3>
+
+      <label>9. When is your next harvest expected?</label>
+      <input type="text" name="nextHarvest">
+
+      <label>10. Do you harvest all at once or in stages?</label>
+      <input type="text" name="harvestType">
+
+      <label>11. How do you decide when rice is ready for harvest?</label>
+      <textarea name="harvestReady"></textarea>
+      <label>12. How do you dry your rice after harvesting?</label>
+      <textarea name="dryingMethod"></textarea>
+
+      <label>13. How long does drying usually take?</label>
+      <input type="text" name="dryingDuration">
+
+      <label>14. Where do you store rice after harvesting?</label>
+      <textarea name="storageLocation"></textarea>
+
+      <label>15. Do you experience pests or mold during storage?</label>
+      <select name="pestsOrMold">
+          <option>Yes</option>
+          <option>No</option>
+      </select>
+
+    </div>
+
+    <div class="section">
+      <h3>SECTION D: QUALITY, INPUTS & COSTS</h3>
+
+      <label>16. How do you ensure rice is clean before selling?</label>
+      <textarea name="cleanRice"></textarea>
+
+      <label>17. What moisture level do you consider safe?</label>
+      <input type="text" name="moisture">
+      <label>18. Where do you get your pest control chemicals and fertilizers?</label>
+      <textarea name="farmInputs"></textarea>
+
+      <label>19. How much do you spend on fertilizers and pest control per season?</label>
+      <input type="text" name="inputCosts">
+
+    </div>
+
+    <div class="section">
+      <h3>SECTION E: SELLING, MARKET & PRICING</h3>
+
+      <label>20. Who do you normally sell your rice to?</label>
+      <input type="text" name="buyers">
+
+      <label>21. When do you typically sell your rice?</label>
+      <select name="sellingTime">
+        <option>Immediately after harvesting</option>
+        <option>Store and wait for better prices</option>
+      </select>
+      <label>22. How much of your harvest do you sell?<i>(e.g., all of it, a specific number of bags?)</i></label>
+      <textarea name="harvestSold"></textarea>
+      <label>23. What is the current market price per 100kg bag?</label>
+      <input type="text" name="marketPrice">
+      <label>24. Historical & Standard Pricing Metrics (per 100kg bag): </label>
+      <label>a) What is the highest price you have ever sold a 100kg bag for?</label>
+      <input type="text" name="highestPrice">
+
+      <label>b) What is the lowest price you have ever sold a 100kg bag for?</label>
+      <input type="text" name="lowestPrice">
+
+      <label>c) What standard price do you usually sell at, regardless of season?</label>
+      <input type="text" name="usualPrice">
+
+      <label>d) What is your preferred standard price that you would feel comfortable selling at?</label>
+      <input type="text" name="preferredPrice">
+      <label>25. Would you prefer selling dried rice or wet rice? What is the price of wet rice?</label>
+      <textarea name="wetOrDryRice"></textarea>
+
+      <label>26. Do you prefer taking rice directly to millers or going through middlemen/brokers?</label>
+      <textarea name="sellingMethod"></textarea>
+    </div>
+
+    <div class="section">
+      <h3>SECTION F: CHALLENGES & PARTNERSHIP</h3>
+
+      <label>27. What major challenges do you face?</label>
+      <textarea name="challenges"></textarea>
+
+      <label>28. How can a buyer best partner with you?</label>
+      <textarea name="partnership"></textarea>
+
+      <label>29. Are you open to selling directly from the farm?</label>
+      <select name="directSelling">
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <label>30. Can you commit to supplying consistently each season?</label>
+      <select name="consistentSupply">
+          <option>Yes</option>
+          <option>No</option>
+      </select>
+
+      <label>31. Would you agree to pre-agreed pricing before harvest?</label>
+      <select name="preAgreedPricing">
+          <option>Yes</option>
+          <option>No</option>
+      </select>
+
+      <label>32. Can I visit during planting or harvest for inspection?</label>
+      <select name="farmInspection">
+          <option>Yes</option>
+          <option>No</option>
+      </select>
+      <div class="section">
+
+    <h3>ADDITIONAL FIELD NOTES</h3>
+
+    <textarea name="fieldNotes"></textarea>
+
+    </div>
+
+    </div>
+
+    <button type="submit">Submit Questionnaire</button>
+
+    <p id="responseMessage"></p>
+
+  </form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Mwea Farmer Questionnaire",
+  "short_name": "MweaForm",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2d6a4f",
+  "icons": []
+}
