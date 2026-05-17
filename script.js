@@ -6,13 +6,22 @@ form.addEventListener('submit', async (e) => {
 
     const formData = new FormData(form);
 
+    const data = Object.fromEntries(formData.entries());
+
+    document.getElementById("responseMessage").innerText =
+        "Submitting...";
+
     try {
 
         const response = await fetch(
             "https://script.google.com/macros/s/AKfycbwCPn-hHhckh6PDsNP53IF6wPD3HHhHtL8FWJ_bCO0WEzcaJ4t3i4q7U53polxPghu85g/exec",
             {
                 method: "POST",
-                body: formData
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
             }
         );
 
