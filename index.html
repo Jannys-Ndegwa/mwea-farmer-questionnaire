@@ -9,6 +9,25 @@
   <link rel="manifest" href="manifest.json">
 
 </head>
+<iframe
+  name="hidden_iframe"
+  style="display:none;"
+></iframe>
+
+<script>
+
+function showMessage() {
+
+    document.getElementById("responseMessage").innerText =
+        "Questionnaire submitted successfully!";
+
+    setTimeout(() => {
+        document.getElementById("farmerForm").reset();
+    }, 1000);
+
+}
+
+</script>
 <body>
 
 <div class="container">
@@ -16,7 +35,13 @@
   <h1>FARMER INTERVIEW QUESTIONNAIRE</h1>
   <h2>Mwea Irrigation Scheme</h2>
 
-  <form id="farmerForm">
+  <form
+    id="farmerForm"
+    method="POST"
+    action="https://script.google.com/macros/s/AKfycbwNYQNdQnyvDwTqYcUSOE9KzacsHEJU5_piHOHiOPCSzwpLOxm0V-V8Lsr4eK3WmH6ySw/exec"
+    target="hidden_iframe"
+    onsubmit="showMessage()"
+  >
 
     <div class="section">
       <h3>Farmer Information</h3>
