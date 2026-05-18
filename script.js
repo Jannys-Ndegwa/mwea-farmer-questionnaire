@@ -34,7 +34,3 @@ form.addEventListener('submit', async (e) => {
     }
 
 });
-
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
-}
